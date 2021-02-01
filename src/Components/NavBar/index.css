@@ -16,6 +16,13 @@
   font-family: "Fraunces";
   color: #252c34;
 }
+.navBar nav span {
+  font-size: 2.3rem;
+  color: white;
+  position: absolute;
+  right: 10.4%;
+  top: 26px;
+}
 .navBar nav a {
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -46,4 +53,45 @@
 .navBar nav a:hover::after {
   opacity: 1;
   transition: opacity, 0.3s ease-in-out;
+}
+.navBar .burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3px;
+}
+.navBar .burger div {
+  width: 35px;
+  height: 6px;
+  background-color: #252c34;
+  border-radius: 5px;
+  margin: 3px 0;
+}
+
+@media (max-width: 800px) {
+  .navBar nav {
+    position: absolute;
+    background-color: #0e8684;
+    width: 100%;
+    left: 0;
+    top: -22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    transition: top 0.4s ease-out;
+  }
+  .navBar nav a {
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+  .navBar nav.open {
+    left: 0;
+    top: 0;
+    transition: top 0.4s ease-out;
+  }
+  .navBar .burger {
+    display: flex;
+  }
 }

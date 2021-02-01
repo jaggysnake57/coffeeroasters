@@ -18,6 +18,13 @@
 		}
 	}
 	nav {
+		span {
+			font-size: 2.3rem;
+			color: white;
+			position: absolute;
+			right: 10.4%;
+			top: 26px;
+		}
 		a {
 			font-size: 0.9rem;
 			text-transform: uppercase;
@@ -48,6 +55,19 @@
 					transition: opacity, 0.3s ease-in-out;
 				}
 			}
+		}
+	}
+	.burger {
+		display: none;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 3px;
+		div {
+			width: 35px;
+			height: 6px;
+			background-color: $blueGrey;
+			border-radius: 5px;
+			margin: 3px 0;
 		}
 	}
 }
