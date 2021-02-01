@@ -1,0 +1,53 @@
+@import '../../../vars';
+
+.navBar {
+	padding: 1.5rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.brand {
+		display: flex;
+		align-items: center;
+		img {
+			width: 40px;
+			object-fit: contain;
+		}
+		h1 {
+			font-family: 'Fraunces';
+			color: $blueGrey;
+		}
+	}
+	nav {
+		a {
+			font-size: 0.9rem;
+			text-transform: uppercase;
+			color: $titleGrey;
+			text-decoration: none;
+			padding: 0 1rem;
+			font-weight: 500;
+			position: relative;
+			transition: color 0.3s ease-in-out;
+			&::after {
+				content: '';
+				display: block;
+				width: 50%;
+				height: 2px;
+				background-color: $milkyCoffee;
+				position: absolute;
+				bottom: -5px;
+				left: 50%;
+				margin-left: -25%;
+				opacity: 0;
+				transition: opacity, 0.3s ease-in-out;
+			}
+			&:hover {
+				transition: color 0.3s ease-in-out;
+				color: $green;
+				&::after {
+					opacity: 1;
+					transition: opacity, 0.3s ease-in-out;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+.navBar {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navBar .brand {
+  display: flex;
+  align-items: center;
+}
+.navBar .brand img {
+  width: 40px;
+  object-fit: contain;
+}
+.navBar .brand h1 {
+  font-family: "Fraunces";
+  color: #252c34;
+}
+.navBar nav a {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #7e828b;
+  text-decoration: none;
+  padding: 0 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+.navBar nav a::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #fdd6b9;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -25%;
+  opacity: 0;
+  transition: opacity, 0.3s ease-in-out;
+}
+.navBar nav a:hover {
+  transition: color 0.3s ease-in-out;
+  color: #0e8684;
+}
+.navBar nav a:hover::after {
+  opacity: 1;
+  transition: opacity, 0.3s ease-in-out;
+}
