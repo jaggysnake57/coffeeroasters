@@ -3,3 +3,21 @@
   max-width: 1440px;
   margin: auto;
 }
+
+button {
+  font-family: "fraunces";
+  font-weight: 700;
+  font-size: 1.2rem;
+  background: none;
+  background-color: #0e8684;
+  border: none;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 7px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 94%;
+  }
+}

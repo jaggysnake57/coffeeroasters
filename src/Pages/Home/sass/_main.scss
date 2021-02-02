@@ -1,1 +1,68 @@
 @import '../../../vars';
+.home {
+	.hero {
+		background: url('../../images/home-hero.jpg');
+		background-position: 9% 76%;
+		background-size: 2382px;
+		background-repeat: no-repeat;
+		padding: 10rem 5rem;
+		border-radius: 10px;
+		margin-bottom: 10rem;
+		h1 {
+			color: white;
+			font-size: 5rem;
+			max-width: 600px;
+			margin-bottom: 2rem;
+		}
+		p {
+			color: $offWhite;
+			max-width: 450px;
+			font-size: 1rem;
+			font-weight: 300;
+			line-height: 1.8rem;
+			margin-bottom: 3rem;
+		}
+	}
+	.collection {
+		margin-bottom: 15rem;
+		h2 {
+			display: block;
+			font-size: min(11vw, 12rem);
+			text-align: center;
+			background-image: linear-gradient(
+				rgba(208, 208, 208, 1),
+				rgba(208, 208, 208, 0.2)
+			);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-moz-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-moz-text-fill-color: transparent;
+		}
+		.cardsContainer {
+			display: flex;
+			justify-content: space-around;
+			margin-top: -90px;
+			width: 100%;
+		}
+		.coffeeCard {
+			text-align: center;
+			width: 20%;
+			img {
+				margin-bottom: 3rem;
+				width: 60%;
+			}
+			h3 {
+				font-size: 1.6rem;
+				color: $blueGrey;
+				margin-bottom: 2rem;
+			}
+			p {
+				font-size: 1.1rem;
+				color: $blueGrey;
+				font-weight: 300;
+				line-height: 1.8rem;
+			}
+		}
+	}
+}

@@ -1,1 +1,35 @@
 @import '../../../vars';
+@media (max-width: 1024px) {
+	.home {
+		.hero {
+			background-size: 1750px;
+			background-position: 8% 85%;
+			padding: 7.5rem 4rem;
+			h1 {
+				font-size: 3.5rem;
+				max-width: 400px;
+			}
+		}
+		.collection {
+			.cardsContainer {
+				flex-direction: column;
+				.coffeeCard {
+					width: 100%;
+					text-align: left;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					margin-bottom: 5rem;
+					img {
+						margin-bottom: 0;
+						width: 30%;
+						margin-right: 5rem;
+					}
+					.cardDescription {
+						width: 40%;
+					}
+				}
+			}
+		}
+	}
+}

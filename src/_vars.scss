@@ -3,3 +3,12 @@ $milkyCoffee: #fdd6b9;
 $green: #0e8684;
 $titleGrey: #7e828b;
 $subtitleBG: #aeaeae;
+$offWhite: #f1f1f1;
+
+@mixin buttons {
+	font-family: 'fraunces';
+	font-weight: 700;
+	font-size: 1.2rem;
+	background: none;
+	background-color: #0e8684;
+}
