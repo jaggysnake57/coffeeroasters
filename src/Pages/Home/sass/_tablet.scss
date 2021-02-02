@@ -31,5 +31,28 @@
 				}
 			}
 		}
+
+		.aboutCardsContainer {
+			flex-direction: column;
+		}
+		.aboutMini {
+			height: 800px;
+		}
+		.aboutCard {
+			display: flex;
+			padding: 3rem 4rem;
+			align-items: center;
+			svg {
+				font-size: 10rem;
+				margin-bottom: 0;
+				margin-right: 4rem;
+			}
+			h3 {
+				text-align: left;
+			}
+			p {
+				text-align: left;
+			}
+		}
 	}
 }

@@ -65,4 +65,48 @@
 			}
 		}
 	}
+	.aboutMini {
+		background-color: $blueGrey;
+		margin-bottom: 15rem;
+		padding: 7rem 5rem;
+		border-radius: 10px;
+		height: 600px;
+		h2 {
+			font-size: 3rem;
+			color: $offWhite;
+			text-align: center;
+			margin-bottom: 3rem;
+		}
+		p {
+			color: $offWhite;
+			text-align: center;
+			line-height: 1.5rem;
+		}
+		& > p {
+			width: 50%;
+			display: block;
+			margin: auto;
+			margin-bottom: 3rem;
+		}
+	}
+	.aboutCardsContainer {
+		display: flex;
+	}
+	.aboutCard {
+		background-color: $green;
+		border-radius: 10px;
+		margin: 1rem;
+		padding: 3%;
+		text-align: center;
+		svg {
+			color: $milkyCoffee;
+			font-size: 7rem;
+			margin-bottom: 2rem;
+		}
+		h3 {
+			color: $offWhite;
+			font-size: 1.3rem;
+			margin-bottom: 2rem;
+		}
+	}
 }

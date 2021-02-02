@@ -60,6 +60,50 @@
   font-weight: 300;
   line-height: 1.8rem;
 }
+.home .aboutMini {
+  background-color: #252c34;
+  margin-bottom: 15rem;
+  padding: 7rem 5rem;
+  border-radius: 10px;
+  height: 600px;
+}
+.home .aboutMini h2 {
+  font-size: 3rem;
+  color: #f1f1f1;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.home .aboutMini p {
+  color: #f1f1f1;
+  text-align: center;
+  line-height: 1.5rem;
+}
+.home .aboutMini > p {
+  width: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+.home .aboutCardsContainer {
+  display: flex;
+}
+.home .aboutCard {
+  background-color: #0e8684;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 3%;
+  text-align: center;
+}
+.home .aboutCard svg {
+  color: #fdd6b9;
+  font-size: 7rem;
+  margin-bottom: 2rem;
+}
+.home .aboutCard h3 {
+  color: #f1f1f1;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
 
 @media (max-width: 1024px) {
   .home .hero {
@@ -89,6 +133,55 @@
   }
   .home .collection .cardsContainer .coffeeCard .cardDescription {
     width: 40%;
+  }
+  .home .aboutCardsContainer {
+    flex-direction: column;
+  }
+  .home .aboutMini {
+    height: 800px;
+  }
+  .home .aboutCard {
+    display: flex;
+    padding: 3rem 4rem;
+    align-items: center;
+  }
+  .home .aboutCard svg {
+    font-size: 10rem;
+    margin-bottom: 0;
+    margin-right: 4rem;
+  }
+  .home .aboutCard h3 {
+    text-align: left;
+  }
+  .home .aboutCard p {
+    text-align: left;
+  }
+}
+@media (max-width: 800px) {
+  .home .aboutCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 4rem;
+  }
+  .home .aboutCard svg {
+    font-size: 10rem;
+    margin-bottom: 2rem;
+    margin-right: 0;
+  }
+  .home .aboutCard h3 {
+    text-align: center;
+  }
+  .home .aboutCard p {
+    text-align: center;
+  }
+  .home .aboutMini {
+    padding: 5rem 1rem;
+    height: 900px;
+  }
+  .home .aboutMini > p {
+    width: 100%;
   }
 }
 @media (max-width: 600px) {
