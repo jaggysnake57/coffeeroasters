@@ -20,11 +20,28 @@
 				text-align: center;
 			}
 		}
+
 		.aboutMini {
 			padding: 5rem 1rem;
-			height: 900px;
 			& > p {
 				width: 100%;
+			}
+		}
+		.howItWorks {
+			text-align: center;
+			.bulletLine,
+			.bulletPoint {
+				display: none;
+			}
+			.bulletCardsContainer {
+				flex-direction: column;
+			}
+			.bulletCard {
+				text-align: center;
+				margin-bottom: 3rem;
+				h3 {
+					width: 100%;
+				}
 			}
 		}
 	}

@@ -36,7 +36,9 @@
 			flex-direction: column;
 		}
 		.aboutMini {
-			height: 800px;
+			.aboutMiniBg {
+				height: 1000px;
+			}
 		}
 		.aboutCard {
 			display: flex;
