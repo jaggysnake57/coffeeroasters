@@ -16,11 +16,10 @@ const NavBar = () => {
 				<span onClick={() => setNavMenuIsOpen(false)}>
 					<RiCloseCircleLine />
 				</span>
-				<Router>
-					<Link to="/">Home</Link>
-					<Link to="/about">About Us</Link>
-					<Link to="/">Create Your Plan</Link>
-				</Router>
+
+				<Link to="/">Home</Link>
+				<Link to="/about">About Us</Link>
+				<Link to="/create">Create Your Plan</Link>
 			</nav>
 			<div className="burger" onClick={() => setNavMenuIsOpen(true)}>
 				<div></div>

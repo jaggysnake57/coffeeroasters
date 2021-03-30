@@ -1,0 +1,119 @@
+.createPlan .hero {
+  background: url("../../images/plan-hero.jpg");
+  background-position: 9% 46%;
+  background-size: 1702px;
+}
+.createPlan .planFormContainer {
+  display: flex;
+}
+.createPlan .currentOptions {
+  flex: 1;
+  font-family: "fraunces";
+  color: #aeaeae;
+  font-size: 1.8rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3rem;
+  height: fit-content;
+}
+.createPlan .currentOptions span {
+  margin-right: 2rem;
+}
+.createPlan .currentOptions p {
+  padding-bottom: 2rem;
+  border-bottom: solid 1px #aeaeae;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+.createPlan .currentOptions .completed {
+  color: #0e8684;
+}
+.createPlan .currentOptions .currentStep {
+  color: #252c34;
+}
+.createPlan .formContainer {
+  flex: 2;
+  min-height: 2500px;
+}
+.createPlan .choices {
+  display: flex;
+  gap: 2%;
+  overflow: hidden;
+  max-height: 500px;
+  transition: max-height 0.3s ease-in;
+}
+.createPlan .isClosed {
+  max-height: 0;
+  transition: max-height 0.3s ease-in;
+}
+.createPlan .selectionContainer {
+  margin-bottom: 5rem;
+}
+.createPlan .selectionContainer .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+.createPlan .selectionContainer .title h2 {
+  font-size: 3rem;
+  color: #7e828b;
+}
+.createPlan .selectionContainer .title svg {
+  font-size: 2rem;
+  color: #0e8684;
+  rotate: 180deg;
+  transition: rotate 0.1s ease-in-out;
+  cursor: pointer;
+}
+.createPlan .selectionContainer .title .isDown {
+  rotate: 0deg;
+  transition: rotate 0.1s ease-in-out;
+  transition-delay: 0.3s;
+}
+.createPlan .choiceCard {
+  background-color: #f4f1ea;
+  padding: 2rem 1.5rem 5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.createPlan .choiceCard h3 {
+  color: #252c34;
+  font-size: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+.createPlan .choiceCard p {
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+.createPlan .checked {
+  color: #f1f1f1;
+  background-color: #0e8684;
+}
+.createPlan .checked h3 {
+  color: #f1f1f1;
+}
+.createPlan .summary {
+  background-color: #252c34;
+  padding: 2rem 4rem;
+  opacity: 0;
+}
+.createPlan .summary h2 {
+  font: 300 1rem "roboto";
+  color: #aeaeae;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.createPlan .summary p {
+  font: 700 2rem "fraunces";
+  color: #f1f1f1;
+  line-height: 3rem;
+}
+.createPlan .summary p span {
+  color: #0e8684;
+  text-transform: capitalize;
+}
+.createPlan .summaryShow {
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}

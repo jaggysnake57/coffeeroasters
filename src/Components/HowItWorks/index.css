@@ -1,0 +1,88 @@
+.howItWorks {
+  margin-bottom: 5rem;
+}
+.howItWorks h2 {
+  color: #7e828b;
+  margin-bottom: 5rem;
+}
+.howItWorks .bulletCardsContainer {
+  display: flex;
+  gap: 3%;
+  margin-bottom: 3rem;
+}
+.howItWorks .bulletLine {
+  width: 55vw;
+  height: 2px;
+  background-color: #fdd6b9;
+  max-width: 1035px;
+}
+.howItWorks .bulletCard {
+  flex: 1;
+}
+.howItWorks .bulletCard h3 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #252c34;
+  width: 60%;
+}
+.howItWorks .bulletCard p {
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+.howItWorks .bulletPoint {
+  width: 50px;
+  height: 50px;
+  background-color: #f1f1f1;
+  border: solid 2px #0e8684;
+  border-radius: 100px;
+  margin-top: -27px;
+  margin-bottom: 3rem;
+}
+.howItWorks .bulletNumber {
+  font-size: 5rem;
+  font-family: "fraunces";
+  color: #fdd6b9;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.createPlan .howItWorks {
+  background-color: #252c34;
+  padding: 5rem;
+  margin-bottom: 10rem;
+}
+.createPlan .howItWorks .bulletLine {
+  margin-left: 25px;
+  width: 48.4vw;
+  max-width: 876px;
+}
+.createPlan .howItWorks .bulletPoint {
+  background: none;
+}
+.createPlan .howItWorks .bulletCard h3 {
+  color: #f1f1f1;
+}
+.createPlan .howItWorks .bulletCard p {
+  color: #f1f1f1;
+}
+
+@media (max-width: 800px) {
+  .howItWorks {
+    text-align: center;
+  }
+  .howItWorks .bulletLine,
+.howItWorks .bulletPoint {
+    display: none;
+  }
+  .howItWorks .bulletCardsContainer {
+    flex-direction: column;
+  }
+  .howItWorks .bulletCard {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .howItWorks .bulletCard h3 {
+    width: 100%;
+  }
+}

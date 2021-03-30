@@ -1,0 +1,89 @@
+.footer {
+  background-color: #252c34;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.footer .brand {
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+}
+.footer .brand img {
+  width: 40px;
+  object-fit: contain;
+}
+.footer .brand h1 {
+  font-family: "Fraunces";
+  color: #252c34;
+}
+.footer .brand h1 {
+  color: #f1f1f1;
+}
+.footer .altNav a {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #7e828b;
+  text-decoration: none;
+  padding: 0 1rem;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+.footer .altNav a::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #fdd6b9;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  margin-left: -25%;
+  opacity: 0;
+  transition: opacity, 0.3s ease-in-out;
+}
+.footer .altNav a:hover {
+  transition: color 0.3s ease-in-out;
+  color: #0e8684;
+}
+.footer .altNav a:hover::after {
+  opacity: 1;
+  transition: opacity, 0.3s ease-in-out;
+}
+.footer .social {
+  font-size: 2rem;
+  color: #f1f1f1;
+  margin-left: auto;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1160px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer .brand,
+.footer .social,
+.footer .altNav {
+    margin-bottom: 2rem;
+  }
+  .footer .social {
+    margin-left: 0;
+  }
+  .footer .brand {
+    margin-right: 0;
+  }
+}
+@media (max-width: 600px) {
+  .footer .altNav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer .altNav a {
+    margin-bottom: 2rem;
+  }
+}

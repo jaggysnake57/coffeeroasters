@@ -1,0 +1,28 @@
+@import '../../../vars';
+.footer {
+	background-color: $blueGrey;
+	padding: 3rem;
+	display: flex;
+	align-items: center;
+	margin-bottom: 3rem;
+	.brand {
+		@include brand;
+		margin-right: 3rem;
+		h1 {
+			color: $offWhite;
+		}
+	}
+	.altNav {
+		a {
+			@include navLink;
+		}
+	}
+	.social {
+		font-size: 2rem;
+		color: $offWhite;
+		margin-left: auto;
+		width: 150px;
+		display: flex;
+		justify-content: space-between;
+	}
+}

@@ -1,0 +1,73 @@
+@import '../../../vars';
+.howItWorks {
+	margin-bottom: 5rem;
+	h2 {
+		color: $titleGrey;
+		margin-bottom: 5rem;
+	}
+	.bulletCardsContainer {
+		display: flex;
+		gap: 3%;
+		margin-bottom: 3rem;
+	}
+	.bulletLine {
+		width: 55vw;
+		height: 2px;
+		background-color: $milkyCoffee;
+		max-width: 1035px;
+	}
+	.bulletCard {
+		flex: 1;
+		h3 {
+			font-size: 2rem;
+			margin-bottom: 3rem;
+			color: $blueGrey;
+			width: 60%;
+		}
+		p {
+			font-weight: 300;
+			line-height: 1.6rem;
+		}
+	}
+	.bulletPoint {
+		width: 50px;
+		height: 50px;
+		background-color: $offWhite;
+		border: solid 2px $green;
+		border-radius: 100px;
+		margin-top: -27px;
+		margin-bottom: 3rem;
+	}
+	.bulletNumber {
+		font-size: 5rem;
+		font-family: 'fraunces';
+		color: $milkyCoffee;
+		font-weight: 900;
+		display: block;
+		margin-bottom: 3rem;
+	}
+}
+
+.createPlan {
+	.howItWorks {
+		background-color: $blueGrey;
+		padding: 5rem;
+		margin-bottom: 10rem;
+		.bulletLine {
+			margin-left: 25px;
+			width: 48.4vw;
+			max-width: 876px;
+		}
+		.bulletPoint {
+			background: none;
+		}
+		.bulletCard {
+			h3 {
+				color: $offWhite;
+			}
+			p {
+				color: $offWhite;
+			}
+		}
+	}
+}

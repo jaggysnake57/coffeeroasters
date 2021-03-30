@@ -1,0 +1,123 @@
+@import '../../../vars';
+.createPlan {
+	.hero {
+		background: url('../../images/plan-hero.jpg');
+		background-position: 9% 46%;
+		background-size: 1702px;
+	}
+	.planFormContainer {
+		display: flex;
+	}
+	.currentOptions {
+		flex: 1;
+		font-family: 'fraunces';
+		color: $subtitleBG;
+		font-size: 1.8rem;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 3rem;
+		height: fit-content;
+		span {
+			margin-right: 2rem;
+		}
+		p {
+			padding-bottom: 2rem;
+			border-bottom: solid 1px $subtitleBG;
+			width: 70%;
+			margin-bottom: 2rem;
+		}
+		.completed {
+			color: $green;
+		}
+		.currentStep {
+			color: $blueGrey;
+		}
+	}
+	.formContainer {
+		flex: 2;
+		min-height: 2500px;
+	}
+	.choices {
+		display: flex;
+		gap: 2%;
+		overflow: hidden;
+		max-height: 500px;
+		transition: max-height 0.3s ease-in;
+	}
+	.isClosed {
+		max-height: 0;
+		transition: max-height 0.3s ease-in;
+	}
+	.selectionContainer {
+		margin-bottom: 5rem;
+		.title {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 3rem;
+			h2 {
+				font-size: 3rem;
+				color: $titleGrey;
+			}
+			svg {
+				font-size: 2rem;
+				color: $green;
+				rotate: 180deg;
+				transition: rotate 0.1s ease-in-out;
+				cursor: pointer;
+				// transition-delay: 0.3s;
+			}
+			.isDown {
+				rotate: 0deg;
+				transition: rotate 0.1s ease-in-out;
+				transition-delay: 0.3s;
+			}
+		}
+	}
+	.choiceCard {
+		background-color: #f4f1ea;
+		padding: 2rem 1.5rem 5rem;
+		border-radius: 10px;
+		cursor: pointer;
+		h3 {
+			color: $blueGrey;
+			font-size: 1.8rem;
+			margin-bottom: 2.5rem;
+		}
+		p {
+			font-weight: 300;
+			line-height: 1.5rem;
+		}
+	}
+	.checked {
+		color: $offWhite;
+		background-color: $green;
+		h3 {
+			color: $offWhite;
+		}
+	}
+	.summary {
+		background-color: $blueGrey;
+		padding: 2rem 4rem;
+		opacity: 0;
+		h2 {
+			font: 300 1rem 'roboto';
+			color: $subtitleBG;
+			text-transform: uppercase;
+			margin-bottom: 1rem;
+		}
+		p {
+			font: 700 2rem 'fraunces';
+			color: $offWhite;
+			line-height: 3rem;
+			span {
+				color: $green;
+				text-transform: capitalize;
+			}
+		}
+	}
+	.summaryShow {
+		opacity: 1;
+		transition: opacity 0.3s linear;
+	}
+}

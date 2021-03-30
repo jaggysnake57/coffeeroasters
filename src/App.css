@@ -4,7 +4,8 @@
   margin: auto;
 }
 
-button {
+button,
+.btn {
   font-family: "fraunces";
   font-weight: 700;
   font-size: 1.2rem;
@@ -14,6 +15,28 @@ button {
   color: white;
   padding: 1rem 1.5rem;
   border-radius: 7px;
+  text-decoration: none;
+}
+
+.hero {
+  background-repeat: no-repeat;
+  padding: 10rem 5rem;
+  border-radius: 10px;
+  margin-bottom: 10rem;
+}
+.hero h1 {
+  color: white;
+  font-size: 5rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+.hero p {
+  color: #f1f1f1;
+  max-width: 450px;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 600px) {

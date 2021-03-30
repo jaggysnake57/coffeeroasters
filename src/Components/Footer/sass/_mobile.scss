@@ -1,0 +1,13 @@
+@import '../../../vars';
+@media (max-width: 600px) {
+	.footer {
+		.altNav {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			a {
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}

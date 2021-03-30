@@ -1,0 +1,17 @@
+@import '../../../vars';
+@media (max-width: 1160px) {
+	.footer {
+		flex-direction: column;
+		.brand,
+		.social,
+		.altNav {
+			margin-bottom: 2rem;
+		}
+		.social {
+			margin-left: 0;
+		}
+		.brand {
+			margin-right: 0;
+		}
+	}
+}
