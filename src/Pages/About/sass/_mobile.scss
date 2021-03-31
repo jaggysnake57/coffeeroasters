@@ -1,0 +1,54 @@
+@import '../../../vars';
+
+@media (max-width: 700px) {
+	.about {
+		.hero {
+			background-position: 29% 120%;
+			background-size: 600px;
+			padding: 3rem 2rem;
+			h1 {
+				font-size: 3rem;
+			}
+		}
+		.commitment {
+			display: block;
+			position: relative;
+			.imageContainer {
+				padding: 0;
+			}
+			.infoContainer {
+				position: absolute;
+				top: 50%;
+				background: linear-gradient(
+					180deg,
+					rgba(241, 241, 241, 0.5) 0%,
+					rgba(241, 241, 241, 1) 50%
+				);
+				padding: 2rem;
+				text-align: center;
+			}
+		}
+		.quality {
+			flex-direction: column;
+			padding: 0;
+			.infoContainer {
+				width: 100%;
+				margin-right: 0;
+				order: 2;
+				text-align: center;
+				padding: 2rem 1rem;
+			}
+			.imageContainer {
+				order: 1;
+				margin-left: 0;
+				width: 100%;
+				max-width: 600px;
+				height: 200px;
+				min-height: 200px;
+				max-height: 200px;
+				background-size: 600px;
+				border-radius: 10px 10px 0 0;
+			}
+		}
+	}
+}

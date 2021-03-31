@@ -1,0 +1,30 @@
+@import '../../../vars';
+
+@media (max-width: 1000px) {
+	.about {
+		.commitment {
+			.imageContainer,
+			.infoContainer {
+				flex: 1;
+				padding: 1rem;
+			}
+		}
+		.quality {
+			display: flex;
+			.infoContainer {
+				width: 50%;
+				margin-right: 0.5rem;
+				h2 {
+					font-size: 1.5rem;
+				}
+			}
+			.imageContainer {
+				margin-left: 0.5rem;
+				width: 50%;
+				position: relative;
+				bottom: 0;
+				right: 0;
+			}
+		}
+	}
+}

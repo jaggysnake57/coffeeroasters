@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
-import { Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link, BrowserRouter as Router, useHistory } from 'react-router-dom';
 import Bean from '../../images/Coffee_beans_by_gnokii.svg';
 import './index.css';
 import { RiCloseCircleLine } from 'react-icons/ri';
 
 const NavBar = () => {
 	const [navMenuIsOpen, setNavMenuIsOpen] = useState(false);
+	const history = useHistory();
+
+	history.listen(() => {
+		setNavMenuIsOpen(false);
+	});
+
 	return (
 		<div className="navBar">
 			<div className="brand">

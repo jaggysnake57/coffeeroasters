@@ -1,0 +1,136 @@
+.about .hero {
+  background: url("../../images/about-hero.jpg");
+  background-position: 9% 76%;
+  background-size: 1612px;
+  padding: 7rem 5rem;
+}
+.about .hero h1 {
+  font-size: 3rem;
+}
+.about .commitment {
+  display: flex;
+  margin-bottom: 15rem;
+}
+.about .commitment .imageContainer {
+  flex: 2;
+}
+.about .commitment .imageContainer img {
+  width: 100%;
+  border-radius: 5px;
+}
+.about .commitment .infoContainer {
+  flex: 3;
+  padding: 4rem;
+}
+.about .commitment .infoContainer h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.about .commitment .infoContainer p {
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+.about .quality {
+  position: relative;
+  background-color: #252c34;
+  margin-bottom: 5rem;
+  color: #f1f1f1;
+  padding: 4rem 3rem;
+  border-radius: 10px;
+}
+.about .quality .infoContainer {
+  width: 55%;
+  padding-bottom: 4rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+.about .quality .infoContainer h2 {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+.about .quality .imageContainer {
+  width: 35%;
+  max-width: 500px;
+  max-height: 550px;
+  min-height: 450px;
+  height: 30vw;
+  position: absolute;
+  overflow: hidden;
+  background-image: url("../../images/about-quality.jpg");
+  background-size: 550px;
+  background-position: 0% 59%;
+  bottom: 2rem;
+  right: 4rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .about .commitment .imageContainer,
+.about .commitment .infoContainer {
+    flex: 1;
+    padding: 1rem;
+  }
+  .about .quality {
+    display: flex;
+  }
+  .about .quality .infoContainer {
+    width: 50%;
+    margin-right: 0.5rem;
+  }
+  .about .quality .infoContainer h2 {
+    font-size: 1.5rem;
+  }
+  .about .quality .imageContainer {
+    margin-left: 0.5rem;
+    width: 50%;
+    position: relative;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media (max-width: 700px) {
+  .about .hero {
+    background-position: 29% 120%;
+    background-size: 600px;
+    padding: 3rem 2rem;
+  }
+  .about .hero h1 {
+    font-size: 3rem;
+  }
+  .about .commitment {
+    display: block;
+    position: relative;
+  }
+  .about .commitment .imageContainer {
+    padding: 0;
+  }
+  .about .commitment .infoContainer {
+    position: absolute;
+    top: 50%;
+    background: linear-gradient(180deg, rgba(241, 241, 241, 0.5) 0%, #f1f1f1 50%);
+    padding: 2rem;
+    text-align: center;
+  }
+  .about .quality {
+    flex-direction: column;
+    padding: 0;
+  }
+  .about .quality .infoContainer {
+    width: 100%;
+    margin-right: 0;
+    order: 2;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  .about .quality .imageContainer {
+    order: 1;
+    margin-left: 0;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    background-size: 600px;
+    border-radius: 10px 10px 0 0;
+  }
+}

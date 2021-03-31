@@ -14,8 +14,8 @@ const Footer = () => {
 			</div>
 			<div className="altNav">
 				<Link to="/">Home</Link>
-				<Link to="/">about us</Link>
-				<Link to="/">create your plan</Link>
+				<Link to="/about">about us</Link>
+				<Link to="/create">create your plan</Link>
 			</div>
 			<div className="social">
 				<ImFacebook2 />

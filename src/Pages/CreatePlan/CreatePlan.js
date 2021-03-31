@@ -6,6 +6,7 @@ import { ImQuotesLeft } from 'react-icons/im';
 import { ImQuotesRight } from 'react-icons/im';
 
 import './index.css';
+import { useLocation } from 'react-router';
 
 const CreatePlan = () => {
 	const prefRef = useRef(null);
@@ -519,7 +520,8 @@ const CreatePlan = () => {
 							<span>{chosenValues.quantity}g</span> ground ala{' '}
 							<span>{chosenValues.grind}</span> sent to me{' '}
 							<span>Every {chosenValues.deliveries}</span>.
-							<ImQuotesRight />{' '}
+							<ImQuotesRight />
+							<button>Order</button>
 						</p>
 					</div>
 				</div>

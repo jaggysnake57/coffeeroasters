@@ -18,7 +18,7 @@
 		top: 3rem;
 		height: fit-content;
 		span {
-			margin-right: 2rem;
+			margin-right: 1rem;
 		}
 		p {
 			padding-bottom: 2rem;
@@ -36,6 +36,7 @@
 	.formContainer {
 		flex: 2;
 		min-height: 2500px;
+		margin-bottom: 1rem;
 	}
 	.choices {
 		display: flex;
@@ -115,9 +116,31 @@
 				text-transform: capitalize;
 			}
 		}
+		button {
+			margin-top: 2rem;
+			margin-left: auto;
+			display: block;
+		}
 	}
 	.summaryShow {
 		opacity: 1;
 		transition: opacity 0.3s linear;
+	}
+}
+@media (max-width: 1366px) {
+	.createPlan {
+		.currentOptions {
+			font-size: 1.5rem;
+			min-width: 295px;
+			span {
+				margin-right: 0.5rem;
+			}
+			p {
+				padding-bottom: 2rem;
+				border-bottom: solid 1px $subtitleBG;
+				width: 70%;
+				margin-bottom: 2rem;
+			}
+		}
 	}
 }

@@ -5,6 +5,7 @@ import { GiCoffeeBeans, GiPresent } from 'react-icons/gi';
 import { FaShippingFast } from 'react-icons/fa';
 import Footer from '../../Components/Footer/Footer';
 import HowItWorks from '../../Components/HowItWorks/HowItWorks';
+import { Link, useHistory } from 'react-router-dom';
 
 const Home = () => {
 	return (
@@ -16,7 +17,9 @@ const Home = () => {
 					expertly curated artisan coffees from our best roasters
 					delivered to your door, at your schedule
 				</p>
-				<button>Create your plan</button>
+				<Link className="btn" to="/create">
+					Create your plan
+				</Link>
 			</section>
 			<section className="collection">
 				<h2>our collection</h2>

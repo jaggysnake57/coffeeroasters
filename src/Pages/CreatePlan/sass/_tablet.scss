@@ -1,3 +1,37 @@
 @import '../../../vars';
-@media (max-width: 1024px) {
+@media (max-width: 1110px) {
+	.createPlan {
+		.choices {
+			flex-direction: column;
+			gap: 2%;
+			overflow: hidden;
+			height: 400px;
+			transition: height 0.3s ease-in;
+		}
+		.isClosed {
+			height: 0;
+			transition: height 0.3s cubic-bezier(0.82, 0, 0.82, 1.28);
+		}
+		.selectionContainer {
+			.title {
+				h2 {
+					font-size: 2rem;
+				}
+			}
+		}
+		.choiceCard {
+			padding: 1rem;
+			margin-bottom: 1rem;
+
+			h3 {
+				color: $blueGrey;
+				font-size: 1.5rem;
+				margin-bottom: 0.5rem;
+			}
+			p {
+				font-weight: 300;
+				line-height: 1.5rem;
+			}
+		}
+	}
 }

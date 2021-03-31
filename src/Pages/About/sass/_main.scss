@@ -1,0 +1,71 @@
+@import '../../../vars';
+
+.about {
+	.hero {
+		background: url('../../images/about-hero.jpg');
+		background-position: 9% 76%;
+		background-size: 1612px;
+		padding: 7rem 5rem;
+		h1 {
+			font-size: 3rem;
+		}
+	}
+	.commitment {
+		display: flex;
+		margin-bottom: 15rem;
+
+		.imageContainer {
+			flex: 2;
+			img {
+				width: 100%;
+				border-radius: 5px;
+			}
+		}
+		.infoContainer {
+			flex: 3;
+			padding: 4rem;
+			h2 {
+				font-size: 2rem;
+				margin-bottom: 3rem;
+			}
+			p {
+				line-height: 1.8rem;
+				font-weight: 300;
+			}
+		}
+	}
+	.quality {
+		position: relative;
+		background-color: $blueGrey;
+		margin-bottom: 5rem;
+		color: $offWhite;
+		padding: 4rem 3rem;
+		border-radius: 10px;
+
+		.infoContainer {
+			width: 55%;
+			padding-bottom: 4rem;
+			h2 {
+				margin-bottom: 3rem;
+				font-size: 2rem;
+			}
+			line-height: 1.8rem;
+			font-weight: 300;
+		}
+		.imageContainer {
+			width: 35%;
+			max-width: 500px;
+			max-height: 550px;
+			min-height: 450px;
+			height: 30vw;
+			position: absolute;
+			overflow: hidden;
+			background-image: url('../../images/about-quality.jpg');
+			background-size: 550px;
+			background-position: 0% 59%;
+			bottom: 2rem;
+			right: 4rem;
+			border-radius: 10px;
+		}
+	}
+}

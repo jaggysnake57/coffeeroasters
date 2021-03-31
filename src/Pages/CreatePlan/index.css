@@ -17,7 +17,7 @@
   height: fit-content;
 }
 .createPlan .currentOptions span {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 .createPlan .currentOptions p {
   padding-bottom: 2rem;
@@ -34,6 +34,7 @@
 .createPlan .formContainer {
   flex: 2;
   min-height: 2500px;
+  margin-bottom: 1rem;
 }
 .createPlan .choices {
   display: flex;
@@ -113,7 +114,88 @@
   color: #0e8684;
   text-transform: capitalize;
 }
+.createPlan .summary button {
+  margin-top: 2rem;
+  margin-left: auto;
+  display: block;
+}
 .createPlan .summaryShow {
   opacity: 1;
   transition: opacity 0.3s linear;
+}
+
+@media (max-width: 1366px) {
+  .createPlan .currentOptions {
+    font-size: 1.5rem;
+    min-width: 295px;
+  }
+  .createPlan .currentOptions span {
+    margin-right: 0.5rem;
+  }
+  .createPlan .currentOptions p {
+    padding-bottom: 2rem;
+    border-bottom: solid 1px #aeaeae;
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 1110px) {
+  .createPlan .choices {
+    flex-direction: column;
+    gap: 2%;
+    overflow: hidden;
+    height: 400px;
+    transition: height 0.3s ease-in;
+  }
+  .createPlan .isClosed {
+    height: 0;
+    transition: height 0.3s cubic-bezier(0.82, 0, 0.82, 1.28);
+  }
+  .createPlan .selectionContainer .title h2 {
+    font-size: 2rem;
+  }
+  .createPlan .choiceCard {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  .createPlan .choiceCard h3 {
+    color: #252c34;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .createPlan .choiceCard p {
+    font-weight: 300;
+    line-height: 1.5rem;
+  }
+}
+@media (max-width: 750px) {
+  .createPlan .hero {
+    background-size: 700px;
+    padding: 2rem;
+  }
+  .createPlan .hero h1 {
+    font-size: 1.5rem;
+  }
+  .createPlan .currentOptions {
+    display: none;
+  }
+  .createPlan .summary {
+    padding: 2rem;
+  }
+  .createPlan .summary p {
+    font-size: 1.5rem;
+  }
+  .createPlan .howItWorks {
+    padding: 2rem;
+  }
+  .createPlan .howItWorks h2 {
+    font-size: 2.3rem;
+  }
+  .createPlan .howItWorks .bulletNumber {
+    margin-bottom: 0.5rem;
+  }
+  .createPlan .howItWorks .bulletCard h3 {
+    border-bottom: #0e8684 solid 1px;
+    padding-bottom: 0.5rem;
+  }
 }
